@@ -4,11 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>table</title>
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        td, th {
+border: 1px solid black;
+padding: 5px 10px;
+        }
+    </style>
 </head>
 <body>
     <h3>html table</h3>
     <table>
-        <thead></thead>
+        <caption>employe salary sheet</caption>
+        <thead>
+            <tr>
+                <th>no</th>
+                <th>name</th>
+                <th>company</th>
+                <th>salary</th>
+            </tr>
+        </thead>
         <tbody>
             <tr>
                 <td>1</td>
@@ -35,7 +52,11 @@
                 <td>333$</td>
             </tr>
         </tbody>
-        <tfoot></tfoot>
+        <tfoot>
+            <tr>
+                <td colspan="4">total employe number 4</td>
+            </tr>
+        </tfoot>
     </table>
 </body>
 </html>
